@@ -52,3 +52,28 @@ def solve(self):
                         new_path.append((next_row, next_col))
                         stack.append(((next_row, next_col), new_path))
         return None
+def display_solution(self):
+        if not self.path:
+            print("No path found")
+            return
+
+        for r, c in self.path:
+            if self.maze[r][c] not in ('S', 'E'):
+                self.maze[r][c] = '*'
+
+        for row in self.maze:
+            print(" ".join(str(cell) for cell in row))
+
+if __name__ == "__main__":
+    example_maze = [
+        ['S', 0, 1, 0, 0],
+        [1, 0, 1, 0, 1],
+        [0, 0, 0, 0, 0],
+        [0, 1, 1, 1, 0],
+        [0, 0, 0, 1, 'E']
+    ]
+
+    solver = MazeSolver(example_maze)
+    if solver.solve():
+        solver.display_solution()
+        
