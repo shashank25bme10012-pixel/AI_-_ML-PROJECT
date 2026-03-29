@@ -6,6 +6,17 @@ In real-world robotics, autonomous navigation in unknown or complex environments
 This implementation demonstrates how an autonomous agent can make decisions, avoid obstacles, and backtrack when hitting a dead end to eventually reach a target destination.
 
 ---
+## Student Details
+
+| Field | Details |
+|---|---|
+| Name | `Shashank Kumar` |
+| Registration Number | `25BME10012` |
+| Branch | MECHANICAL core |
+| Subject | Fundamentals of AI/ML (CSA2001) |
+| Academic Year | 2026 |
+
+---
 
 ## Features
 * **Pure Python Implementation**: No external libraries are required, making it lightweight and compatible with any standard Python environment.
@@ -62,3 +73,4 @@ S * 1 0 0
 0 * * * *
 0 1 1 1 *
 0 0 0 1 E
+
